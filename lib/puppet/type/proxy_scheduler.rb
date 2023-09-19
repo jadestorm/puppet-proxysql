@@ -5,7 +5,7 @@ Puppet::Type.newtype(:proxy_scheduler) do
 
   ensurable
 
-  autorequire(:file) { '/root/.my.cnf' }
+  autorequire(:class) { 'proxysql::admin_credentials' }
   autorequire(:class) { 'mysql::client' }
   autorequire(:service) { 'proxysql' }
 

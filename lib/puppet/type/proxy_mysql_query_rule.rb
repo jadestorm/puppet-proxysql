@@ -5,7 +5,7 @@ Puppet::Type.newtype(:proxy_mysql_query_rule) do
 
   ensurable
 
-  autorequire(:file) { '/root/.my.cnf' }
+  autorequire(:class) { 'proxysql::admin_credentials' }
   autorequire(:class) { 'mysql::client' }
   autorequire(:service) { 'proxysql' }
 
@@ -117,6 +117,11 @@ Puppet::Type.newtype(:proxy_mysql_query_rule) do
 
   newproperty(:reconnect) do
     desc 'feature currently not in use.'
+    newvalue(%r{[01]})
+  end
+
+  newproperty(:multiplex) do
+    desc 'Enable / Disable multiplexing on rule'
     newvalue(%r{[01]})
   end
 
