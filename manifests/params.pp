@@ -100,7 +100,7 @@ class proxysql::params {
         baseurl  => "http://repo.proxysql.com/ProxySQL/proxysql-1.4.x/centos/${repo_os_major_version}",
         enabled  => true,
         gpgcheck => true,
-        gpgkey   => 'http://repo.proxysql.com/ProxySQL/repo_pub_key',
+        gpgkey   => 'http://repo.proxysql.com/ProxySQL/proxysql-1.4.xrepo_pub_key',
       }
       $repo20             = {
         name     => 'proxysql_2_0',
@@ -108,7 +108,7 @@ class proxysql::params {
         baseurl  => "http://repo.proxysql.com/ProxySQL/proxysql-2.0.x/centos/${repo_os_major_version}",
         enabled  => true,
         gpgcheck => true,
-        gpgkey   => 'http://repo.proxysql.com/ProxySQL/repo_pub_key',
+        gpgkey   => 'http://repo.proxysql.com/ProxySQL/proxysql-2.0.xrepo_pub_key',
       }
       $repo21             = {
         name     => 'proxysql_2_1',
@@ -116,7 +116,7 @@ class proxysql::params {
         baseurl  => "http://repo.proxysql.com/ProxySQL/proxysql-2.1.x/centos/${repo_os_major_version}",
         enabled  => true,
         gpgcheck => true,
-        gpgkey   => 'http://repo.proxysql.com/ProxySQL/repo_pub_key',
+        gpgkey   => 'http://repo.proxysql.com/ProxySQL/proxysql-2.1.xrepo_pub_key',
       }
       $repo22             = {
         name     => 'proxysql_2_2',
@@ -124,7 +124,7 @@ class proxysql::params {
         baseurl  => "http://repo.proxysql.com/ProxySQL/proxysql-2.2.x/centos/${repo_os_major_version}",
         enabled  => true,
         gpgcheck => true,
-        gpgkey   => 'http://repo.proxysql.com/ProxySQL/repo_pub_key',
+        gpgkey   => 'http://repo.proxysql.com/ProxySQL/proxysql-2.2.x/repo_pub_key',
       }
       $repo23             = {
         name     => 'proxysql_2_3',
@@ -132,7 +132,7 @@ class proxysql::params {
         baseurl  => "http://repo.proxysql.com/ProxySQL/proxysql-2.3.x/centos/${repo_os_major_version}",
         enabled  => true,
         gpgcheck => true,
-        gpgkey   => 'http://repo.proxysql.com/ProxySQL/repo_pub_key',
+        gpgkey   => 'http://repo.proxysql.com/ProxySQL/proxysql-2.3.x/repo_pub_key',
       }
       $repo24             = {
         name     => 'proxysql_2_4',
@@ -140,7 +140,7 @@ class proxysql::params {
         baseurl  => "http://repo.proxysql.com/ProxySQL/proxysql-2.4.x/centos/${repo_os_major_version}",
         enabled  => true,
         gpgcheck => true,
-        gpgkey   => 'http://repo.proxysql.com/ProxySQL/repo_pub_key',
+        gpgkey   => 'http://repo.proxysql.com/ProxySQL/proxysql-2.4.x/repo_pub_key',
       }
       $repo25             = {
         name     => 'proxysql_2_5',
@@ -148,7 +148,7 @@ class proxysql::params {
         baseurl  => "http://repo.proxysql.com/ProxySQL/proxysql-2.5.x/centos/${repo_os_major_version}",
         enabled  => true,
         gpgcheck => true,
-        gpgkey   => 'http://repo.proxysql.com/ProxySQL/repo_pub_key',
+        gpgkey   => 'http://repo.proxysql.com/ProxySQL/proxysql-2.5.x/repo_pub_key',
       }
     }
     default: {
